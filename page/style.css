@@ -1,0 +1,152 @@
+body {
+  background: radial-gradient(circle, rgba(2,4,18,1) 0%, rgba(5,17,36,1) 100%);
+  color: #f9f9f9;
+  font-family: Avenir,sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title {
+  flex-direction: column;
+  line-height: 10px;
+  font-size: 20px;
+}
+li {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+}
+
+li::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #ffffff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+a {
+  color: #f9f9f9;
+}
+
+a:hover {
+  color: #c9c9c9;
+  transition: 0.3s;
+}
+
+#inscreva-se-btn {
+  color: #c9c9c9;
+  background-color: #7b00d6;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 20px auto;
+}
+
+#inscreva-se-btn:hover {
+  background-color: #8c10eb;
+  transition: 0.5s ease-in-out;
+  color: #f9f9f9;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 10px;
+  font-family: roboto;
+}
+
+span {
+  color: #00d4ff;
+}
+
+p {
+  font-size: 20px;
+  line-height: 20px;
+  max-width: 500px;
+  font-family: roboto;
+}
+
+img {
+  width: 700px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+form [type="submit"] {
+  height: 50px;
+  width: 50%;
+  background-color: #7b00d6;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+form [type="submit"]:hover {
+  cursor: pointer;
+  background-color: #8c10eb;
+  transition: 0.3s;
+}
+
+input {
+  margin-top: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  header, main {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  form{
+    margin: 0 auto;
+    align-self: center;
+  }
+  input {
+    align-self: center;
+  }
+
+  form [type="submit"] {
+    width: 70%;
+  }
+
+  ul {
+    text-align: center;
+  }
+  img {
+    margin-top: 30px;
+    width: 400px;
+  }
+}
