@@ -150,3 +150,33 @@ input {
     width: 400px;
   }
 }
+
+ul a {
+  text-decoration: none;
+}
+
+@media (max-width: 810px) {
+  .concordo {
+    position: relative;
+    margin: 0 30%;
+  }
+  #inscreva-se-btn {
+    width: 200px;
+  }
+  img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 30px;
+  }
+  .concordo {
+    position: relative;
+    right: -15px;
+  }
+  img {
+    max-width: 350px;
+  }
+}
